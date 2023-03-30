@@ -1,0 +1,85 @@
+/* Desctop stiles */
+
+/*--- HEADER ----*/
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+        
+	}
+
+    .header-list.address {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .header-link {
+	    font-weight: 500;
+	    line-height: 1.5;
+	    padding: 24px 0;
+
+    	color: var(--dark);
+	    transition: color var(--timing-function);
+}
+    .header-item {
+        display: flex;
+    }
+
+    .header-list > .address,
+    .header-item > .address {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    
+        color: var(--text);
+    }
+
+}
+
+/*--- /HEADER ---*/
+
+/*--- MAIN---*/
+				/*---Hero---*/
+                /*---Section 1---*/           
+
+@media screen and (min-width:1200px) {
+    .advantage-section.section {
+        width: 100%;
+    }
+    .section-list.advantage {
+        display: flex;
+        gap: 24px;
+        justify-content: space-around;
+        
+
+    }
+    .section-item.advantage {
+        max-width: 264px;
+        max-height: 112px;
+        
+        width: calc((100% - 72px) / 4);
+    }
+    .advantage-icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        max-width: 264px;
+        max-height: 112px;
+        margin-bottom: 8px;
+
+     
+        background-color: var(--light);
+        border-radius: 4px;
+    } 
+}
+
+            /*--- TEAM Section---*/ 
+
+
+
+
+/*--- /MAIN---*/

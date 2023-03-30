@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +12,9 @@
 		
 		<link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet"/>
 		
+		<link rel="mobile-stylesheet" href="./CSS/mobile.css" />
+		<link rel="tablet-stylesheet" href="./CSS/tablet.css" />
+		<link rel="desctop-stylesheet" href="./CSS/desctop.css" />
 		<link rel="stylesheet" href="./CSS/styles.css" />
 	</head>
 	<body>
@@ -35,12 +37,62 @@
 						<li class="header-item address"><a class="header-link address" href="tel:+110001111111">+11 (000) 111-11-11</a> </li>
 					</ul>		
 				</address>	
-				<button type="button" class="mobile-header-btn">
+				<button type="button" class="mobile-header-btn" data-menu-open>
 					<svg class="mobile-burger-icon" width="32px" height="22px">
-						<use href="./images/sprite.svg#icon-menu-burger"></use>
+						<use href="./images/sprite.svg#icon-icon-menu"></use>
 					</svg>
 				</button>
 			</div>		
+			<div class="mobile-menu" data-menu>
+				<button class="mob-menu-close-btn" data-menu-close>
+					<svg class="mob-menu-close-icon" width="8px" height="8px">
+						<use href="./images/sprite.svg#icon-close-black"></use>
+					</svg>
+				</button>
+
+				<ul class="mobile-header-list list">
+					<li class="mobile-header-item"><a class="mobile-header-link" href="./index.html" rel="noopener noreferrer">Studio</a></li>
+					<li class="mobile-header-item"><a class="mobile-header-link" href="./portfolio.html" rel="noopener noreferrer"></a>Portfolio</li>
+					<li class="mobile-header-item"><a class="mobile-header-link" href="" rel="noopener noreferrer"></a>Contacts</li>
+				</ul>
+
+				<ul class="mobile-header-list address">
+					<li class="mobile-header-item phone"><a class="mobile-header-link phone" href="tel:+110001111111" rel="noopener noreferrer">+11 (000) 111-11-11</a></li>
+					<li class="mobile-header-item mail"><a class="mobile-header-link mail" href="mailto:info@devstudio.com" rel="noopener noreferrer"></a>info@devstudio.com</li>
+				</ul>
+
+				<ul class="mobile-header-list social-list">
+					<li class="mobile-header-item social-list-item">
+						<a class="mobile-header-link social-list-link" href="" rel="noopener noreferrer">
+						<svg class="mobile-header-icon social-list-icon" width="24px" height="24px">
+							<use href="./images/sprite.svg#icon-instagram"></use>
+						</svg>
+						</a>
+					</li>
+					<li class="mobile-header-item social-list-item">
+						<a class="mobile-header-link social-list-link" href="" rel="noopener noreferrer">
+						<svg class="mobile-header-icon social-list-icon" width="24px" height="24px">
+							<use href="./images/sprite.svg#icon-twitter"></use>
+						</svg>
+						</a>
+					</li>
+					<li class="mobile-header-item social-list-item">
+						<a class="mobile-header-link social-list-link" href="" rel="noopener noreferrer">
+						<svg class="mobile-header-icon social-list-icon" width="24px" height="24px">
+							<use href="./images/sprite.svg#icon-facebook"></use>
+						</svg>
+						</a>
+					</li>
+					<li class="mobile-header-item social-list-item">
+						<a class="mobile-header-link social-list-link" href="" rel="noopener noreferrer">
+						<svg class="mobile-header-icon social-list-icon" width="24px" height="24px">
+							<use href="./images/sprite.svg#icon-linkedin"></use>
+						</svg>
+						</a>
+					</li>
+				</ul>
+
+			</div>
 		</header>
 
 		<!-- / HEADER -->
@@ -50,18 +102,18 @@
 		<main>
 
 			<!--Hero section-->
-			<!-- 
+			 
 			<section class="section-hero">
-				<div class="container">
+				<div class="container-hero">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
 					<button class="hero-btn" type="button" data-modal-open>Order Service</button>
 				</div>					
 			</section>
-			-->
+		
 			<!--Section 1-->
-			<!--
+			
 			<section class="advantage-section section">
-				<div class="container">
+				<div class="container-advantage">
 					<h2 class="visually-hidden">Advantages</h2>
 						<ul class="section-list advantage">
 							<li class="section-item advantage">
@@ -103,9 +155,9 @@
 						</ul>
 				</div>
 			</section>
-			-->
+		
 			<!--Section 2-->
-			<!--
+			
 			<section class="activity-section section">
 				<div class="container">	
 					<h2 class="section-title">What are we doing</h2>
@@ -116,11 +168,11 @@
 					</ul>
 				</div>	
 			</section>
-			-->
+			
 			<!--Next section Team-->
-			<!--
+	
 			<section class="team-section section">
-				<div class="container">
+				<div class="team-container">
 					<h2 class="section-title">Our Team</h2>
 					<ul class="section-list team">
 						<li class="section-item team">
@@ -128,7 +180,7 @@
 							<div class="caption-team">
 								<h3 class="caption-item">Mark Guerrero</h3>
 								<p class="caption-text">Product Designer</p>
-								<ul class="social-list">						
+								<ul class="social-list-team">						
 									<li class="social-list-item">
 										<a href="" class="social-list-link">
 											<svg class="social-list-icon" width="16" height="16">
@@ -165,7 +217,7 @@
 							<div class="caption-team">
 								<h3 class="caption-item">Tom Ford</h3>
 								<p class="caption-text">Frontend Developer</p>
-								<ul class="social-list">
+								<ul class="social-list-team">
 									<li class="social-list-item">
 										<a href="" class="social-list-link">
 											<svg class="social-list-icon" width="16" height="16">
@@ -202,7 +254,7 @@
 							<div class="caption-team">
 								<h3 class="caption-item">Camila Garcia</h3>
 								<p class="caption-text">Marketing</p>
-								<ul class="social-list">
+								<ul class="social-list-team">
 									<li class="social-list-item">
 										<a href="" class="social-list-link">
 											<svg class="social-list-icon" width="16" height="16">
@@ -239,7 +291,7 @@
 							<div class="caption-team">
 								<h3 class="caption-item">Daniel Wilson</h3>
 								<p class="caption-text">UI Designer</p>
-								<ul class="social-list">
+								<ul class="social-list-team">
 									<li class="social-list-item">
 										<a href="" class="social-list-link">
 											<svg class="social-list-icon" width="16" height="16">
@@ -274,7 +326,7 @@
 					</ul>
 				</div>
 			</section>
-			-->
+	
 			<!--Last section Customers-->
 			<!--
 			<section class="customer-section section">
@@ -395,7 +447,7 @@
 		<!--/Footer-->
 		
 		<!--MODAL-->
-		<!--
+		
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close-btn" data-modal-close>
@@ -453,7 +505,8 @@
 				</form>	
 			</div>
 		</div>
-		-->
+
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
