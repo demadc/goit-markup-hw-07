@@ -1,9 +1,17 @@
 /* Desctop stiles */
 
 /*--- HEADER ----*/
+.container {
+	width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+
+}
 
 @media screen and (min-width: 1200px) {
-	.container {
+	.container.nav {
+        max-height: 24px;
+        align-items: center;
 		width: 1200px;
 		margin: 0 auto;
         
