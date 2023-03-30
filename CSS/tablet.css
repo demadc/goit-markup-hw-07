@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 768px) {
     .section-hero {
-        padding: 188px 0;
+        padding: 112px 0;
         max-width: 1440px;
         height: 600px;
         margin: 0 auto;
@@ -116,7 +116,7 @@
     }
     
     .hero-title {
-        width: 496px;
+        min-width: 496px;
         margin-left: auto;
         margin-right: auto;
     
@@ -155,9 +155,14 @@
         background-color: var(--button-active);
     }
 }
+            
+
             /*---Section 1---*/
 
 @media screen and (min-width: 768px) {  
+    .advantage-icon-link {
+        display: none;             
+    } 
     .container-advantage {
         width: 100%;
     }  
@@ -167,14 +172,38 @@
         justify-content: space-between;    
     }
 
-   .section-item.advantage {
-         width: calc((100% - 24px) / 2);
-     }
+   .section-item.caption {
+	margin-bottom: 8px;
+	text-align: center;
 
-    .advantage-icon-link {
-        display: none;             
-    } 
-}           
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;	
+}
+    .caption-text {
+	
+	text-align: left;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+    }
+ 
+}   
+@media  screen and (min-width: 768px) and (max-width: 1199px) {
+    .section-item.advantage {
+        width: calc((100% - 24px) / 2);
+  }
+    .section-item.advantage:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 72px;
+    }
+
+    .section-item.advantage:not(:nth-child(2n)) {
+    margin-right: 24px;
+    }
+}
 
 			/*--- Section 2---*/ 
 
@@ -183,6 +212,7 @@
         display: none;
     }
 }
+
 
             /*--- TEAM Section---*/ 
  /*           

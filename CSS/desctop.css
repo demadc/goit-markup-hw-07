@@ -50,6 +50,13 @@
 
 /*--- MAIN---*/
 				/*---Hero---*/
+                
+@media screen and (min-width: 1200px) {
+    .section-hero {
+        padding: 188px 0;
+     
+    }
+}   
                 /*---Section 1---*/           
 
 @media screen and (min-width:1200px) {
@@ -59,34 +66,45 @@
     .section-list.advantage {
         display: flex;
         gap: 24px;
-        justify-content: space-around;
-        
-
+        justify-content: space-between;  
     }
     .section-item.advantage {
-        max-width: 264px;
-        max-height: 112px;
-        
         width: calc((100% - 72px) / 4);
     }
+   
     .advantage-icon-link {
         display: flex;
         justify-content: center;
         align-items: center;
         
-
-        max-width: 264px;
-        max-height: 112px;
         margin-bottom: 8px;
-
      
         background-color: var(--light);
         border-radius: 4px;
     } 
+    .section-item.caption {
+		margin-bottom: 8px;
+		text-align: left;
+	
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.11;
+		letter-spacing: 0.02em;	
+	}
+	.caption-text {
+		text-align: left;
+	
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+	}
 }
 
-            /*--- TEAM Section---*/ 
+            /*---Section 2---*/
+                    /*-----IN common css---*/
 
+            /*--- TEAM Section---*/ 
 
 
 
