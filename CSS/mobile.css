@@ -280,9 +280,13 @@
 			/*--- TEAM Section---*/ 
 
 @media screen and (max-width:767px) {
+	.team-section.section {
+		padding: 96px 16px;
+	}
 	.team-container {
 		width: 100%;
 	}
+	
 	.section-list.team {
 		display: flex;
 		align-items: center;
@@ -336,27 +340,46 @@
 	}
 }
 
+			 /*--- Customers Section---*/ 
 
-
-
-
-/*	
-	
-
-	
-	
-} */
-
-
-
-
-
-
-
-
+@media screen and (max-width: 767px) {
+	.customer-section.section {
+		padding: 96px 16px;
+	}
+	.customer-container {
+		width: 100%;
+	}
+	.customer-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		
+		margin-top: 72px;
+		
+	}
+	.customer-section-item {
+		width: calc((100% - 16px) / 2);
+		
+	}
+	.customer-section-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 72px;
+    }
+    
+}
 
 /*--- /MAIN---*/
 
+/*---FOOTER---*/
+
+
+
+
+
+
+
+
+/*--- /FOOTER---*/
 
 /*--- MODAL---*/
 @media screen and (max-width: 767px) {

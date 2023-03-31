@@ -29,12 +29,14 @@
 
     .nav {
 	    display: flex;
+        align-items: center;
+        max-height: 24px;
     }
 
     .header-link {
 	    font-weight: 500;
 	    line-height: 1.5;
-	    padding: 35px 0;
+	    padding: 28px 0;
 
     	color: var(--dark);
 	    transition: color var(--timing-function);
@@ -215,8 +217,8 @@
 
 
             /*--- TEAM Section---*/ 
- /*           
-@media screen and (min-width: 768px) {
+          
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .team-section.section {
         padding: 96px 108px;
     }
@@ -254,24 +256,52 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
+    .caption-item {
+        margin-bottom: 8px;
+    }
 
     .social-list-team {
         display: flex;
         justify-content: center;
         gap: 24px;
-    }
-    
-   
 
+        margin-top: 8px;
+    }
+    .caption-text.team {
+	
+        text-align: center;
+    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        } 
+       
 }            
 
-*/
+             /*--- Customers Section---*/ 
 
+@media screen and (min-width: 768px) {
+	   
+    .customer-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-
-            
-
+        margin-top: 72px;
+    }
+    .customer-section-item {
+		width: calc((100% - 48px) / 3);
+		
+	}
+    .customer-section-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 72px;
+    }
+    .customer-section-item:not(:nth-child(3n)) {
+        margin-right: 24px;
+    }
+    
+}
 
 /*--- /MAIN---*/
 

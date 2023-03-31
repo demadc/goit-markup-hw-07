@@ -25,7 +25,7 @@
     .header-link {
 	    font-weight: 500;
 	    line-height: 1.5;
-	    padding: 24px 0;
+	    padding: 25px 0;
 
     	color: var(--dark);
 	    transition: color var(--timing-function);
@@ -105,6 +105,97 @@
                     /*-----IN common css---*/
 
             /*--- TEAM Section---*/ 
+
+@media screen and (min-width: 1200px) {
+    
+.section-list.team {
+	display: flex;
+	gap: 24px;
+	margin-top: 72px;
+}
+
+.section-item.team {
+	background-color: var(--white-text-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.section-item.caption {
+	text-align: left;
+	margin-bottom: 8px;
+}
+.social-list-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+}
+
+.caption-item {
+	margin-bottom: 8px;
+    text-align: center;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	font-size: 20px;
+	line-height: 1.2;
+
+	color: var(--dark);
+}
+
+.caption-text.team {
+	margin-bottom: 8px;
+    text-align: center;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+
+	color: var(--text);
+}
+}
+
+                 /*--- Customers Section---*/ 
+
+@media screen and (min-width: 1200px) {
+    
+    .customer-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        margin-top: 72px;
+    }
+    
+    .customer-section-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 88px;
+    
+        border: 1px solid currentColor;
+        color: var(--subtle-text);
+        border-radius: 4px;
+        transition: color var(--timing-function);
+    }
+    .customer-section-link:hover,
+    .customer-section-link:focus {
+        color: var(--button-active);
+    }
+    
+    .customer-section-icon {
+        fill: currentColor;
+        transition: fill var(--timing-function);
+    }
+    
+}
+
+
+
+
+
 
 
 
