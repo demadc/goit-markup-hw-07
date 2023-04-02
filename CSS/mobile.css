@@ -338,6 +338,14 @@
 		list-style: none;
 		padding: 0;
 	}
+	.social-list-item {
+		width: 40px;
+		height: 40px;
+	
+		border-radius: 50%;
+		background-color: #4d5ae5;
+		transition: background-color var(--timing-function);
+	}
 }
 
 			 /*--- Customers Section---*/ 
@@ -358,6 +366,9 @@
 		margin-top: 72px;
 		
 	}
+	.customer-section-link {
+		width: 190px;
+	}
 	.customer-section-item {
 		width: calc((100% - 16px) / 2);
 		
@@ -372,6 +383,60 @@
 
 /*---FOOTER---*/
 
+@media screen and (max-width: 767px) {
+	
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.moto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 72px;
+		
+	}
+	.footer-social-media {
+		margin-bottom: 72px;
+	}
+	.footer-social-text {
+		margin-bottom: 16px;
+	
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+
+		color: var(--white-text-color);
+	}
+	
+	.social-media-list {
+		display: flex;
+		justify-content: center;
+		gap: 24px;
+	}
+	
+	.social-media-item {
+		width: 40px;
+		height: 40px;
+	
+		border-radius: 50%;
+		background-color: #4d5ae5;
+		transition: background-color var(--timing-function);
+	}
+	
+	
+	.social-media-item:hover,
+	.social-media-link:focus {
+		background-color: var(--success);
+	}
+	
+}
 
 
 

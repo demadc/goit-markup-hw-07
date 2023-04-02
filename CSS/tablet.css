@@ -267,6 +267,14 @@
 
         margin-top: 8px;
     }
+    .social-list-item {
+		width: 40px;
+		height: 40px;
+	
+		border-radius: 50%;
+		background-color: #4d5ae5;
+		transition: background-color var(--timing-function);
+	}
     .caption-text.team {
 	
         text-align: center;
@@ -281,7 +289,7 @@
 
              /*--- Customers Section---*/ 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	   
     .customer-list {
         display: flex;
@@ -304,6 +312,41 @@
 }
 
 /*--- /MAIN---*/
+
+/* ------------------FOOTER------------------- */
+
+@media screen and (max-width: 1199px) {
+  .footer-social-media {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .footer-social-text {
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF  
+  }
+  .social-media-list {
+    display: flex;
+    gap: 24px;
+  }
+   
+}
+
+
+
+    
+
+
+
+
+
+/* ------------------/FOOTER------------------- */
 
 
 /*--- MODAL---*/

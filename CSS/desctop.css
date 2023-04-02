@@ -159,7 +159,6 @@
                  /*--- Customers Section---*/ 
 
 @media screen and (min-width: 1200px) {
-    
     .customer-list {
         display: flex;
         flex-wrap: nowrap;
@@ -167,7 +166,14 @@
 
         margin-top: 72px;
     }
-    
+
+    .customer-section-item {
+		width: calc((100% - 72px) / 6);
+		
+	}
+    .customer-section-item:not(:nth-child(6n)) {
+        margin-right: 24px;
+    }
     .customer-section-link {
         display: flex;
         justify-content: center;
@@ -193,10 +199,14 @@
 }
 
 
-
-
-
-
-
-
 /*--- /MAIN---*/
+
+/* ------------------FOOTER------------------- */
+
+
+
+
+
+
+
+/* ------------------/FOOTER------------------- */
