@@ -214,16 +214,17 @@
 
 @media screen and (min-width: 1200px) {
     .footer {
-        padding: 100px 156px;
-        
+        padding-top: 100px;
+        padding-bottom: 100px;
+
         background-color: var(--dark);
     }
 
     .container.footer-container {
         display: flex;
-        min-width: 1158px;
+        max-width: 1158px;
     
-        padding: 0;
+        padding: 0 15px;
     }
   
     .moto {
