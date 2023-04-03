@@ -53,10 +53,27 @@
                 
 @media screen and (min-width: 1200px) {
     .section-hero {
-        padding: 188px 0;
-     
+        padding: 188px 0;  
+        max-width: 1440px;
+        height: 600px;
+        margin: 0 auto;
+            
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero_desc_opt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--dark);
     }
-}   
+     
+} 
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.section-hero {
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero_desc_opt@2x.jpg);
+	
+	}
+} 
                 /*---Section 1---*/           
 
 @media screen and (min-width:1200px) {
