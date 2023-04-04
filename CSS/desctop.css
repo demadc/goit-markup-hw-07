@@ -1,21 +1,8 @@
 /* Desctop stiles */
 
 /*--- HEADER ----*/
-.container {
-	width: 100%;
-	padding-left: 16px;
-	padding-right: 16px;
 
-}
-
-@media screen and (min-width: 1200px) {
-	.container.nav {
-        max-height: 24px;
-        align-items: center;
-		width: 1200px;
-		margin: 0 auto;
-        
-	}
+@media screen and (min-width: 1158px) {
 
     .header-list.address {
         display: flex;
@@ -51,10 +38,10 @@
 /*--- MAIN---*/
 				/*---Hero---*/
                 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .section-hero {
         padding: 188px 0;  
-        max-width: 1440px;
+        max-width: 1158px;
         height: 600px;
         margin: 0 auto;
             
@@ -66,9 +53,9 @@
      
 } 
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 	.section-hero {
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero_desc_opt@2x.jpg);
 	
@@ -76,10 +63,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 } 
                 /*---Section 1---*/           
 
-@media screen and (min-width:1200px) {
-    .advantage-section.section {
-        width: 100%;
-    }
+@media screen and (min-width: 1158px) {
     .section-list.advantage {
         display: flex;
         gap: 24px;
@@ -88,7 +72,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .section-item.advantage {
         width: calc((100% - 72px) / 4);
     }
-   
+    .container-advantage.container {
+        padding: 0;
+    }
     .advantage-icon-link {
         display: flex;
         justify-content: center;
@@ -119,15 +105,22 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
             /*---Section 2---*/
-                    /*-----IN common css---*/
+ @media screen and (min-width: 1158px) {
+    .container.activity {
+        padding: 0;
+    } 
+            
+}
+
 
             /*--- TEAM Section---*/ 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     
 .section-list.team {
 	display: flex;
-	gap: 24px;
+    justify-content: space-between;
+	
 	margin-top: 72px;
 }
 
@@ -183,7 +176,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
                  /*--- Customers Section---*/ 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .customer-list {
         display: flex;
         flex-wrap: nowrap;
@@ -229,7 +222,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 /* ------------------FOOTER------------------- */
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;

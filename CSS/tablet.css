@@ -1,4 +1,4 @@
-/* Tablet stiles till 1199px */
+/* Tablet stiles till 1157px */
 
 /*--- HEADER ---*/
 
@@ -89,7 +89,7 @@
     } 
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
     .header-list.address {
         display: flex;
         flex-direction: column;
@@ -107,30 +107,18 @@
 @media screen and (min-width: 768px) {
     .section-hero {
         padding: 112px 0;
-        max-width: 1440px;
-        height: 600px;
+        max-width: 768px;
+        height: 432px;
         margin: 0 auto;
     
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero_tablet_opt.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: var(--dark);
-    }
-    
-    .hero-title {
-        min-width: 496px;
-        margin-left: auto;
-        margin-right: auto;
-    
-        font-size: 56px;
-        line-height: 1.07;
-    }
-    
+    }    
     .hero-btn {
         margin-top: 48px;
-  
-    }
-    
+    }    
     .hero-btn:hover,
     .hero-btn:focus {
         background-color: var(--button-active);
@@ -152,13 +140,10 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     .advantage-icon-link {
         display: none;             
     } 
-    .container-advantage {
-        width: 100%;
-    }  
     .section-list.advantage {
         display: flex; 
         flex-wrap: wrap;  
-        justify-content: space-between;    
+        
     }
 
    .section-item.caption {
@@ -171,7 +156,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 	letter-spacing: 0.02em;	
 }
     .caption-text {
-	
 	text-align: left;
 
 	font-weight: 500;
@@ -181,7 +165,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     }
  
 }   
-@media  screen and (min-width: 768px) and (max-width: 1199px) {
+@media  screen and (min-width: 768px) and (max-width: 1157px) {
     .section-item.advantage {
         width: calc((100% - 24px) / 2);
   }
@@ -196,7 +180,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 			/*--- Section 2---*/ 
 
-@media  screen and (max-width: 1199px) {
+@media  screen and (max-width: 1157px) {
     .activity-section {
         display: none;
     }
@@ -205,16 +189,12 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
             /*--- TEAM Section---*/ 
           
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .team-section.section {
-        padding: 96px 108px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .section-list.team {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 72px;
-        
     } 
 
     .section-item.team {
@@ -245,6 +225,15 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     }
     .caption-item {
         margin-bottom: 8px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+        color: #2E2F42;
+
     }
 
     .social-list-team {
@@ -266,7 +255,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 	
         text-align: center;
     
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -276,7 +265,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
              /*--- Customers Section---*/ 
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 	   
     .customer-list {
         display: flex;
@@ -302,14 +291,14 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 /* ------------------FOOTER------------------- */
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
   .footer-social-media {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
   }
   .footer-social-text {
-    text-align: center;
+    text-align: left;
 
     font-weight: 500;
     font-size: 16px;
@@ -320,7 +309,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
   }
   .social-media-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
   }
    
 }
