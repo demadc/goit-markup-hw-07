@@ -148,7 +148,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
    .section-item.caption {
 	margin-bottom: 8px;
-	text-align: center;
+	text-align: left;
 
 	font-weight: 700;
 	font-size: 36px;
@@ -198,7 +198,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     } 
 
     .section-item.team {
-        width: calc((100% - 24px) / 2);
+        width: 264px;
 
         background-color: var(--white-text-color);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -217,12 +217,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         margin-right: 24px;
     }
 
-    .caption-team {
-        text-align: center;
-
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
     .caption-item {
         margin-bottom: 8px;
 
@@ -230,7 +224,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         font-size: 20px;
         line-height: 1.2;
         text-align: center;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.02em;
 
         color: #2E2F42;
 
@@ -252,7 +246,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 		transition: background-color var(--timing-function);
 	}
     .caption-text.team {
-	
         text-align: center;
     
         font-weight: 400;
@@ -275,8 +268,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         margin-top: 72px;
     }
     .customer-section-item {
-		width: calc((100% - 48px) / 3);
-		
+		width: 168px;
 	}
     .customer-section-item:not(:nth-last-child(-n + 2)) {
         margin-bottom: 72px;

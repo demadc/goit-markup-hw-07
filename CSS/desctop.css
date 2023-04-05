@@ -41,7 +41,7 @@
 @media screen and (min-width: 1158px) {
     .section-hero {
         padding: 188px 0;  
-        max-width: 1158px;
+        max-width: 1440px;
         height: 600px;
         margin: 0 auto;
             
@@ -81,7 +81,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         align-items: center;
         
         margin-bottom: 8px;
-     
+        height: 112px;
+
         background-color: var(--light);
         border-radius: 4px;
     } 
@@ -137,12 +138,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .social-list-team {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
 
 
     margin-left: 16px;
     margin-right: 16px;
-    margin-bottom: 40px;
+    
 }
 .social-list-item {
     width: 40px;
