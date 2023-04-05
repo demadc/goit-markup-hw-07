@@ -131,7 +131,6 @@ address {
     color: var(--primary-brand);
 }
 
-
 /*--------MAIN--------*/
 
 			/*---Hero---*/
@@ -684,3 +683,146 @@ address {
 } 
 
 /*------------------/MODAL-------------------*/
+
+/*------------------SECOND page_Portfolio-------------------*/
+
+.filter {
+	padding: 12px 24px;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	color: var(--primary-brand);
+	background: var(--light);
+	border: 1px solid var(--accent);
+	border-radius: 4px;
+	transition: background-color var(--timing-function), color var(--timing-function), box-shadow var(--timing-function);
+}
+
+.filter:hover,
+.filter:focus {
+	color: var(--white-text-color);
+	background-color: var(--button-active);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+.section-portfolio-link:hover,
+.section-portfolio-link:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+	
+.section-portfolio-link:hover .portfolio-item-text-overlay,
+.section-portfolio-link:focus .portfolio-item-text-overlay {
+	transform: translateY(0);
+}
+	
+/*
+.filter {
+	padding: 12px 24px;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	color: var(--primary-brand);
+	background: var(--light);
+	border: 1px solid var(--accent);
+	border-radius: 4px;
+	transition: background-color var(--timing-function), color var(--timing-function), box-shadow var(--timing-function);
+}
+
+.filter:hover,
+.filter:focus {
+	color: var(--white-text-color);
+	background-color: var(--button-active);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.section-portfolio {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.section-list.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section-item.portfolio:not(:nth-child(3n)) {
+	margin-right: 24px;
+}
+
+.section-item.portfolio:not(:nth-last-child(-n + 3)) {
+	margin-bottom: 48px;
+}
+
+.container-portfolio {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
+
+	border: 1px solid var(--accent);
+}
+
+.caption.portfolio,
+.caption-text.portfolio {
+	text-align: left;
+}
+
+.section-portfolio-link {
+	display: block;
+
+	transition: box-shadow var(--timing-function);
+}
+
+.section-portfolio-link:hover,
+.section-portfolio-link:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.section-portfolio-link:hover .portfolio-item-text-overlay,
+.section-portfolio-link:focus .portfolio-item-text-overlay {
+	transform: translateY(0);
+}
+
+.overlay-text-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-item-text-overlay {
+	position: absolute;
+	overflow: auto;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+	padding-left: 32px;
+	padding-right: 32px;
+
+	line-height: 24px;
+
+	color: var(--light);
+	background-color: var(--primary-brand);
+	transform: translateY(100%);
+	transition: transform var(--timing-function);
+}
+
+
+*/
+
+
+

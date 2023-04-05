@@ -1,3 +1,18 @@
+:root {
+	--primary-brand: #4d5ae5;
+	--dark: #2e2f42;
+	--success: #31d0aa;
+	--text: #434455;
+	--subtle-text: #8e8f99;
+	--accent: #e7e9fc;
+	--light: #f4f4fd;
+	--button-active: #404bbf;
+	--white-text-color: #ffffff;
+	--modal-bg: #fcfcfc;
+	--timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* Desctop stiles */
 
 /*--- HEADER ----*/
@@ -20,7 +35,11 @@
     .header-item {
         display: flex;
     }
+    .current {
+	    position: relative;
 
+    	color: var(--primary-brand);
+    }
     .header-list > .address,
     .header-item > .address {
         font-weight: 400;
@@ -150,7 +169,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     height: 40px;
 
     border-radius: 50%;
-    background-color: #4d5ae5;
+    background-color: var(--primary-brand);
     transition: background-color var(--timing-function);
 }
 
@@ -272,3 +291,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 
 /* ------------------/FOOTER------------------- */
+
+/*------------------SECOND page_Portfolio-------------------*/
+
+
+
+
+
+
+
