@@ -341,7 +341,77 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 /*------------------SECOND page_Portfolio-------------------*/
 
+@media screen and (min-width: 768px) {
+    .section-list-btn {
+		display: flex;
+		justify-content: center;
+		gap: 24px;
 
+        margin: 0 auto;
+
+	}
+	.section-portfolio.section {
+		padding-top: 64px;
+		padding-bottom: 96px;
+	}
+	
+	.section-list.portfolio {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		margin-top: 64px;
+	}
+    
+    .section-item.portfolio:not(:nth-child(2n)) {
+        margin-right: 24px;
+    }
+    
+    .section-item.portfolio:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 48px;
+    }
+    
+
+    .container-portfolio {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
+    
+        border: 1px solid var(--accent);
+    }
+    
+    .section-portfolio-link {
+        display: block;
+    
+        transition: box-shadow var(--timing-function);
+    }
+    
+    
+    .overlay-text-wrap {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .portfolio-item-text-overlay {
+        position: absolute;
+        overflow: auto;
+        top: 0;
+        left: 0;
+    
+        width: 100%;
+        height: 100%;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+    
+        line-height: 24px;
+    
+        color: var(--light);
+        background-color: var(--primary-brand);
+        transform: translateY(100%);
+        transition: transform var(--timing-function);
+    }
+}
 
 
 
