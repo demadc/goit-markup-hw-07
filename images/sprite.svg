@@ -151,8 +151,9 @@
 <symbol id="icon-sending" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.998 13.488 0.010 0.003-0.012-0.003v7.345l5.735-5.576 7.265 2.242 5-23.333z"></path>
 </symbol>
-<symbol id="menu-hamburger" viewBox="0 0 47 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+<symbol id="icon-icon-menu" viewBox="0 0 47 32">
+   <path d="M-.221 2.077c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961A2.182 2.182 0 0 1-.221 2.077zm0 13.538c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961a2.182 2.182 0 0 1-2.182-2.182zm0 13.539c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961a2.182 2.182 0 0 1-2.182-2.182z"/>
 </symbol>
+
 </defs>
 </svg>
