@@ -297,9 +297,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 @media screen and (min-width: 1158px) {
     .section-list-btn {
 		display: flex;
-		justify-content: center;
-		gap: 24px;
-
         margin: 0 auto;
 
 	}
@@ -314,7 +311,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 		margin-top: 72px;
 	}
-    
     .section-item.portfolio:not(:nth-child(3n)) {
         margin-right: 24px;
     }
@@ -322,8 +318,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .section-item.portfolio:not(:nth-last-child(-n + 3)) {
         margin-bottom: 48px;
     }
+   
     
-
+    .section-item.portfolio {
+        width: 360px;
+    }
     .container-portfolio {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -366,7 +365,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         transition: transform var(--timing-function);
     }
 }
-
 
 
 
