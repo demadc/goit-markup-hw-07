@@ -99,24 +99,23 @@
 		list-style: none;
 	}
 
-	.mobile-header-item {
+	.mobile-header-link {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.11;
 		letter-spacing: 0.02em;
 		text-transform: capitalize;
+		text-decoration: none;
 
 		color: var(--dark);
 	}
+
 	.current {
 		position: relative;
 
+		text-decoration: underline;
 		color: var(--primary-brand);
 	}
-	.mobile-header-link {
-		text-decoration: none;
-	}
-
 	.mobile-header-list.address {
 		display: flex;
 		flex-direction: column;
