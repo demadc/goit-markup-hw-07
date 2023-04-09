@@ -98,9 +98,8 @@
 		padding: 0;
 		list-style: none;
 	}
-	.mobile-header-link {
-		text-decoration: none;
 
+	.mobile-header-item {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.11;
@@ -113,6 +112,9 @@
 		position: relative;
 
 		color: var(--primary-brand);
+	}
+	.mobile-header-link {
+		text-decoration: none;
 	}
 
 	.mobile-header-list.address {
